@@ -30,6 +30,6 @@ def signup(request):
         user1=user(fname=fname,lname=lname,username=username,address=address,city=city,state=state,pincode=pincode,email=email,password=password)
         user1.save()
         print("user created")
-        return render(request,'user_info.html')
+        return render(request,'user_info.html',{'user':username})
     else:
         return render(request,'signup.html')
