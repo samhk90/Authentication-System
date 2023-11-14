@@ -1,0 +1,178 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ecf0f1;
+}
+
+/* Container styles */
+.container1 {
+    display: flex;
+    color: #ecf0f1;
+    height: 100vh; /* Full viewport height */
+    margin: 0 0;
+    padding: 0;
+}
+.sidebar.collapsed span,
+.sidebar.collapsed a {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+/* Sidebar styles */
+.sidebar {
+    width: 230px; 
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+    transition: width 0.3s ease-in-out;
+    
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    transition: margin-left 0.3s ease-in-out;
+    color: black;
+}
+
+/* Collapsed sidebar styles */
+.sidebar.collapsed {
+    padding-left: 0;
+    width: 60px;
+}
+
+.main-content.collapsed {
+    margin-left: 1px;
+}
+
+.sidebar_btn {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    position: relative;
+    padding-left: 50px;
+
+}
+.logo {
+    display: block;
+    color: white;
+    font-size: 1.5rem; /* Adjust size as needed */
+    padding: 20px 20px 10px;
+}
+
+.sidebar_btn:hover {
+    background-color: #555; /* Darker shade when hovered */
+}
+
+.sidebar_btn i {
+    margin-right: 10px;
+}
+.sidebar_btn .btn_icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: left center; /* Adjust position to add space */
+    background-size: 20px 20px;
+}
+
+/* Icons for specific buttons */
+.users_info_btn .btn_icon {
+    background-image: url("img/users-alt.png");
+}
+
+.event_btn .btn_icon {
+    background-image: url("img/calendar.png");
+}
+.blog_btn .btn_icon {
+    background-image: url("img/comment-alt.png");
+}
+.problem_btn .btn_icon {
+    background-image: url("img/pencil.png");
+}
+.list_btn .btn_icon {
+    background-image: url("img/list-check.png");
+}
+#nav{
+    width: 100%;
+    padding: 0;
+}
+#user_info_banner{
+    margin: 20px auto;
+    background-color: white;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.636);
+}
+#table_container{
+    margin: 20px auto;
+    width: 90%;
+    background-color: white;
+    border: 50px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.636);
+    padding: 20px;
+}
+#table{
+    
+    background-color: white;
+    border: 50px;
+    
+}
+/* Additional styling for the form */
+#banner form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#banner form label {
+    font-weight: bold;
+}
+
+#banner form input[type="text"],
+#banner form input[type="date"],
+#banner form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#banner form input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+#banner form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#banner form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+table a{
+    text-decoration: none;
+    
+}
+#output{
+    height: 50px;
+}
