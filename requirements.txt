@@ -6,6 +6,7 @@ mysqlclient==2.1.0  # or PyMySQL==1.1.0
 mysql-connector-python==8.0.12
 protobuf==4.21.12
 PyMySQL==1.1.0
+psycopg2==2.9.1
 soupsieve
 sqlparse==0.4.4
 typing_extensions
