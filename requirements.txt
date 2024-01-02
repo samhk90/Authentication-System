@@ -10,5 +10,5 @@ protobuf==4.21.12
 PyMySQL==1.1.0
 soupsieve
 sqlparse==0.4.4
-typing_extensions==4.8.0
-tzdata==2023.3
+typing_extensions
+tzdata
